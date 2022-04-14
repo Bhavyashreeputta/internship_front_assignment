@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-elem" id="navLinks">
+            <span class="sidebar-close"><i class="fa fa-times" onclick="hideMenu()"></i></span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+        <span class="sidebar-open"><i class="fa fa-bars" onclick="showMenu()"></i></span>
+    </div>
+    <div class="floating-menu">
+        <div class="menu">
+            <ul>
+                <li><a href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span class="title">Home</span>
+                    </a>
+                </li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <span class="title">About Us</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span class="title">Contact Us</span>
+                    </a>
+                </li>
+                <li class="toggle-login"> 
+                    <div class="toggle-switch">
+                        <div id="btn"></div>
+                        <button class="toggle-btn" onclick="leftClick()">EN</button>
+                        <button class="toggle-btn" onclick="rightClick()"><i class="fa fa-minus-square-o" aria-hidden="true"></i></button>
+                    </div>
+                    <div class = "login">
+                        <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <span class="title">Login</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class = "slide-container">
+        <div class = "carousel-img">
+            <div class="slides fade">
+                <div class="number">1/4</div>
+                <img src="./images/image1.jpg" alt="image1">
+            </div>
+            <div class="slides fade">
+                <div class="number">2/4</div>
+                <img src="./images/image2.png" alt="image2">
+            </div>
+            <div class="slides fade">
+                <div class="number">3/4</div>
+                <img src="./images/image3.gif" alt="image3">
+            </div>
+            <div class="slides fade">
+                <div class="number">4/4</div>
+                <img src="./images/image4.jpg" alt="image4">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <div class="cat-browse">
+        <p>Browse By <span>Categories</span></p>
+        <div class="scroll-category">
+            <div class="prev-icon" onclick="scrollleft()">&#10094;</div>
+            <div class="grid-view">
+                <div class="view-item">
+                    <img src="./images/art.jpg" alt="art">
+                    <div class="nameText">Art</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/business.jpg" alt="business">
+                    <div class="nameText">Business</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/culture.png" alt="culture">
+                    <div class="nameText">Culture</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/dogfriendly.jpg" alt="dogfriendly`">
+                    <div class="nameText">Dog Friendly</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/fitness.jpg" alt="fitness">
+                    <div class="nameText">Fitness</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/food.jpg" alt="food">
+                    <div class="nameText">Food</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/free.jpg" alt="free">
+                    <div class="nameText">Free</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/kids.jpg" alt="kids">
+                    <div class="nameText">Kids</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/learning.jpg" alt="learning">
+                    <div class="nameText">Learning</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/movie.jpg" alt="movie">
+                    <div class="nameText">Movies</div>
+                </div>
+            </div>
+            <div class="next-icon" onclick="scrollright()">&#10095;</div>
+        </div>
+    </div>
+    <div class="cat-regions">
+        <p>Browse By <span>Regions</span></p>
+        <div class="scroll-category">
+            <div class="reg-prev-icon" onclick="regionscrollleft()">&#10094;</div>
+            <div class="region-grid-view">
+                <div class="view-item">
+                    <img src="./images/shibuya.jpg" alt="shibayu">
+                    <div class="nameText">Shibuya-Ku</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/bunkyo.jpg" alt="bunkyo">
+                    <div class="nameText">Bunkyo-Ku</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/minato.jpg" alt="minato">
+                    <div class="nameText">Minato-Ku</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/akihabara.jpg" alt="akihabara">
+                    <div class="nameText">Akihabara</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/asakusa.jpg" alt="asakusa">
+                    <div class="nameText">Asakusa</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/ikebukuro.jpg" alt="ikebukuro">
+                    <div class="nameText">Ikebukuro</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/ginza.jpg" alt="ginza">
+                    <div class="nameText">Ginza</div>
+                </div>
+                <div class="view-item">
+                    <img src="./images/koenji.jpg" alt="koenji">
+                    <div class="nameText">Koenji</div>
+                </div>
+            </div>
+            <div class="reg-next-icon" onclick="regionscrollright()">&#10095;</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-list">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="footer-info">
+                <p><a href="#">Info</a> <i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Support</a> <i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Marketing</a></p>
+                <p><a href="#">Terms of Use </a><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="footer-end">
+                <small>&copy; 2018 Clarity Money</small>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src = "home.js"></script>
+</html>
